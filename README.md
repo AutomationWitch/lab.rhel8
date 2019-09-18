@@ -1,1 +1,1 @@
-# lab.rhel8
+# labs.rhel8
