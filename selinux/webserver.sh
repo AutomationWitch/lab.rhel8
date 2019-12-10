@@ -1,6 +1,6 @@
 #!/bin/bash
 
-## Salut les OPS, voici le script de déploiement du nouveau site !
+## Voici le script de déploiement du nouveau site !
 ## Bon week-end !
 
 yum install httpd -y
