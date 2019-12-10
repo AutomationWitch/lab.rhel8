@@ -1,0 +1,14 @@
+- name: Selinux fix for my Web server
+  hosts: localhost
+  become: true
+
+  vars:
+    selinux_fcontexts:
+      - target: '/web(/.*)?'
+        setype: httpd_sys_content_t
+    selinux_restore_dirs:
+      - /web
+
+  tasks:
+    - import_role:
+        name: rhel-system-roles.selinux
